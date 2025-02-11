@@ -22,8 +22,8 @@
             $mail->Username = $_ENV["MAIL_USER"];
             $mail->Password = $_ENV["MAIL_PASS"];
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->setFrom($email);
-            $mail->addAddress($email);
+            $mail->setFrom($_ENV["MAIL_ADMIN"]);
+            $mail->addAddress($_ENV["MAIL_ADMIN"]);
             $mail->CharSet = "UTF-8";
             $mail->Encoding = "base64";
             $mail->isHTML(true);

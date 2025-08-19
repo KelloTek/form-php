@@ -13,6 +13,12 @@
             <label for="email">Adresse email</label>
             <input id="email" name="email" type="email" placeholder="e.g contact@example.com" required>
 
+            <label for="phone">Téléphone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Numéro de téléphone" pattern="[0-9]{10}" title="Veuillez entrer un numéro de téléphone valide (10 chiffres)" required>
+
+            <label for="subject">Sujet</label>
+            <input type="text" name="subject" id="subject" placeholder="Sujet" required>
+
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Entrez votre message" required></textarea>
 
